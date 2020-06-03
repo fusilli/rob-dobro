@@ -9,7 +9,60 @@
     background-size: 300px 308px;
   }
 @tailwind components;
-
+.h2 {
+  @apply px-2 text-2xl leading-tight uppercase tracking-widest font-black text-center;
+  @screen sm {
+    @apply text-3xl;
+  }
+  @screen md {
+    @apply text-4xl;
+  }
+}
+.dzien {
+  @apply pt-12 border-t-4 mt-4 border-dotted border-zolty px-2 text-2xl leading-tight uppercase tracking-widest font-black text-center mb-10;
+  @screen sm {
+    @apply text-3xl;
+  }
+}
+.prelegent {
+  @apply w-full px-2 mb-12 text-center;
+  @screen sm {
+    @apply w-1/2;
+  }
+  @screen md {
+    @apply w-1/3;
+  }
+}
+.prelegent-foto {
+  @apply rounded-full shadow mx-auto my-4;
+}
+.prelegent-nazwisko {
+  @apply text-xl text-granatowy font-black uppercase tracking-wider;
+}
+.prelegent-organizacja {
+  @apply text-sm text-gray-700;
+}
+.tytul-prelekcji {
+  @apply mt-2 font-bold italic;
+}
+.argumenty li {
+  @apply w-full max-w-lg px-2 mb-8 text-center;
+  @screen sm {
+    @apply w-1/2 px-4;
+  }
+  @screen md {
+    @apply w-1/3;
+  }
+}
+.jak-dziala p {
+  @apply px-2;
+  @screen sm {
+    @apply px-8;
+  }
+  &:not(:first-child) {
+    @apply pt-6 border-t-4 border-dotted border-rozowy mt-6;
+  }
+}
 @tailwind utilities;
 .font-kalam {
   font-family: 'Kalam', cursive;
