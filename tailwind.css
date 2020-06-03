@@ -1,0 +1,17 @@
+@tailwind base;
+.planety {
+  background: url(/img/planety.svg) 50% 50% no-repeat;
+  background-size: 800px 206px;
+  @apply bg-fixed;
+}
+  footer {
+    background: url(/img/osmiornica.svg) 75% 106% no-repeat;
+    background-size: 300px 308px;
+  }
+@tailwind components;
+
+@tailwind utilities;
+.font-kalam {
+  font-family: 'Kalam', cursive;
+  @apply font-bold;
+}
