@@ -48,26 +48,52 @@ footer a {
     @apply text-3xl;
   }
 }
-.prelegent {
-  @apply w-full px-2 mb-12 text-center;
-  @screen sm {
-    @apply w-1/2;
+.home {
+  .prelegent {
+    @apply w-full px-2 mb-12 text-center;
+    @screen sm {
+      @apply w-1/2;
+    }
+    @screen md {
+      @apply w-1/3;
+    }
   }
-  @screen md {
-    @apply w-1/3;
+  .nazwisko {
+    @apply text-xl text-granatowy font-black uppercase tracking-wider;
+  }
+  .organizacja {
+    @apply text-sm text-gray-700;
+  }
+  .tytul {
+    @apply mt-2 font-bold italic;
+  }
+}
+.nagrania {
+  .prelegent {
+    @apply max-w-5xl mx-auto px-2 mb-12 text-center pt-6 border-t-2 border-dotted border-blekitny;
+  }
+  .nazwisko {
+    @apply text-2xl text-granatowy font-black uppercase tracking-wider;
+  }
+  .organizacja {
+    @apply text-base text-gray-700;
+  }
+  .bio {
+    @apply mt-3 max-w-2xl mx-auto;
+    &:before {
+      content: "";
+      @apply block mx-auto mb-2 w-32 border-t border-dotted border-rozowy;
+    }
+  }
+  .tytul {
+    @apply text-2xl leading-snug font-bold italic mt-2 mb-8 mx-auto;
+    @screen md {
+      @apply text-3xl;
+    }
   }
 }
 .foto {
   @apply rounded-full shadow mx-auto my-4;
-}
-.nazwisko {
-  @apply text-xl text-granatowy font-black uppercase tracking-wider;
-}
-.organizacja {
-  @apply text-sm text-gray-700;
-}
-.tytul {
-  @apply mt-2 font-bold italic;
 }
 .argumenty li {
   @apply w-full max-w-lg px-2 mb-8 text-center;
