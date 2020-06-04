@@ -1,4 +1,16 @@
 @tailwind base;
+a {
+  @apply underline text-niebieski;
+  &:hover, &:focus {
+    @apply text-rozowy;
+  }
+}
+footer a {
+  @apply text-blue-200;
+  &:hover, &:focus {
+    @apply text-blue-100;
+  }
+}
 .planety {
   background: url(/img/planety.svg) 50% 50% no-repeat;
   background-size: 800px 206px;
@@ -19,12 +31,12 @@
   }
 }
 .button {
-  @apply text-2xl leading-tight uppercase tracking-widest font-black bg-blekitny text-teal-100 px-4 py-3 rounded-lg;
+  @apply inline-block text-2xl uppercase tracking-widest font-black no-underline bg-blekitny text-teal-100 px-3 py-2 rounded-lg shadow-md;
   &:hover, &:focus {
-    @apply bg-niebieski text-blue-100;
+    @apply bg-niebieski text-blue-100 shadow;
   }
   @screen sm {
-    @apply text-3xl;
+    @apply text-3xl px-4 py-3;
   }
   @screen md {
     @apply text-4xl;
