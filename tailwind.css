@@ -57,16 +57,16 @@ footer a {
     @apply w-1/3;
   }
 }
-.prelegent-foto {
+.foto {
   @apply rounded-full shadow mx-auto my-4;
 }
-.prelegent-nazwisko {
+.nazwisko {
   @apply text-xl text-granatowy font-black uppercase tracking-wider;
 }
-.prelegent-organizacja {
+.organizacja {
   @apply text-sm text-gray-700;
 }
-.tytul-prelekcji {
+.tytul {
   @apply mt-2 font-bold italic;
 }
 .argumenty li {
