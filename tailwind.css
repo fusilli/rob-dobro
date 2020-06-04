@@ -88,7 +88,3 @@ footer a {
   }
 }
 @tailwind utilities;
-.font-kalam {
-  font-family: 'Kalam', cursive;
-  @apply font-bold;
-}
